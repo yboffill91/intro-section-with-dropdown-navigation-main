@@ -9,28 +9,42 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
+<div class="contenedor">
+  <div class="navBar">
+    <img src="./images/logo.svg" alt="">
+  <div class="menu">
+  <ul>
+  <li> Features</li>
+ <li> Company </li>
+  <li> Careers </li>
+ <li> About </li>
+</ul>
+<div class="access">
   Login
   Register
-
+</div>
+</div>
+</div>
+<div class="main">
+  <div class="text">
   Make remote work
 
   Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.
 
   Learn more
-  
+</div>
+<div class="portrait">
+  <picture>
+    <source srcset="./images/image-hero-mobile.png" media="(min-width:375px)">
+    <img src="./images/image-hero-desktop.png" alt="">
+  </picture>
+</div>
+</div>
+</div> 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
