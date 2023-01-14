@@ -10,7 +10,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /*  box-sizing: border-box;*/
 }
 :root {
   --almostWhite: #fafafa;
@@ -19,7 +19,7 @@
 }
 body {
   font-family: "Epilogue", sans-serif;
-  color: var(--almostBlack);
+  color: var(--mediumGray);
   font-size: 18px;
   font-weight: 500;
   background-color: var(--almostWhite);
@@ -35,21 +35,143 @@ body {
   width: 95%;
   grid-gap: 5px;
 }
-.navBar{
+.navBar {
   grid-area: n;
-  padding: 15px 5px 20px;
+  padding: 2% 5px 4%;
   display: flex;
 }
-.menu{
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-.menu ul{
+.menu ul {
   display: flex;
   list-style: none;
 }
-.menu li{
+.menu li {
   margin-left: 20%;
+  color: var(--mediumGray);
+  cursor: pointer;
+}
+.menu li:hover {
+  color: var(--almostBlack);
+}
+.menu li:active {
+  color: var(--almostBlack);
+}
+.boton {
+  padding: 10px 15px;
+  color: var(--mediumGray);
+  cursor: pointer;
+}
+.boton:hover {
+  color: var(--almostBlack);
+}
+.boton:active {
+  color: var(--almostBlack);
+}
+.registrer {
+  border: solid;
+  border-color: var(--almostWhite);
+}
+.registrer:hover {
+  border: solid;
+  border-radius: 15px;
+  border-color: var(--almostBlack);
+}
+.main {
+  display: flex;
+}
+.text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 5%;
+  margin-right: 15px;
+}
+.text h1 {
+  font-size: 80px;
+  font-weight: 800;
+  color: var(--almostBlack);
+}
+.text p {
+  padding: 3% 10% 5% 0;
+}
+.more {
+  color: var(--almostWhite);
+  background-color: var(--almostBlack);
+  width: 150px;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: solid;
+  border-color: var(--almostBlack);
+}
+.more:hover {
+  background-color: var(--almostWhite);
+  color: var(--almostBlack);
+}
+.promo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.promo img {
+  object-fit: cover;
+  margin: 2%;
+  width: 75px;
+}
+.portrait {
+  width: 50%;
+}
+.portrait img {
+  width: 100%;
+  float: right;
+}
+@media screen and (max-width: 838px) {
+  .menu {
+    display: none;
+  }
+  .main h1 {
+    font-size: 47px;
+  }
+  .text {
+    width: 40%;
+  }
+  .portrait {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .navBar {
+    padding: 5% auto;
+  }
+  .main {
+    flex-direction: column-reverse;
+  }
+  .menu {
+    display: none;
+  }
+  .text {
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text h1 {
+    padding: 2% 0;
+  }
+  .text p {
+    padding: 2% 0;
+  }
+  .portrait {
+    width: 100%;
+  }
+  .more {
+    margin: 5% 0;
+  }
 }
